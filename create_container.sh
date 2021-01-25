@@ -63,7 +63,7 @@ export PCT_OPTIONS="
   -onboot 1
   -tags homeassistant
 "
-bash -c "$(wget -qLO - https://github.com/whiskerz007/proxmox_lxc_create/raw/main/lxc_create.sh)" || exit
+bash -c "$(wget -qLO - https://github.com/vicelikedust/proxmox_lxc_create/raw/main/lxc_create.sh)" || exit
 
 # Detect storage pool type
 STORAGE_TYPE=$(pvesm status -storage $(pct config $CTID | grep rootfs | awk -F ":" '{print $2}') | awk 'NR>1 {print $2}')

@@ -72,7 +72,7 @@ if [ "$STORAGE_TYPE" == "zfspool" ]; then
 fi
 
 # Download setup script
-REPO="https://github.com/whiskerz007/proxmox_hassio_lxc"
+REPO="https://github.com/vicelikedust/proxmox_hassio_lxc"
 wget -qO - ${REPO}/tarball/master | tar -xz --strip-components=1
 
 # Modify LXC permissions to support Docker
